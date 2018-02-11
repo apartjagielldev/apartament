@@ -24,12 +24,7 @@
 }
 
 .img-responsive {
-    position: relative;
-	float: left;
-	height: 150px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-	background-size:     cover;
+	height: 175px;
 }
 
 .gallery-div {
