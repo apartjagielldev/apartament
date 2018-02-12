@@ -22,6 +22,12 @@ $(document).ready(function(){
 
     RemoveClassInSection('description', 'div', 'animated');
     RemoveClassInSection('description', 'div', 'bounceInDown');
+
+    RemoveClassInSection('intro', 'h1', 'fadeInDown');
+    RemoveClassInSection('intro', 'h1', 'animated');
+
+    RemoveClassInSection('intro', 'p', 'fadeInUp');
+    RemoveClassInSection('intro', 'p', 'animated');
     
     RemoveHeader('atractions');
     RemoveHeader('gallery');
