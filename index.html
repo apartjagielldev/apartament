@@ -179,14 +179,15 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
 					<div>
+					<div class="animatedParent">
 					<div class="section-heading text-center">
-					<h2 class="h-bold">Atrakcje</h2>
+					<h2 class="h-bold animated bounceInDown">Atrakcje</h2>
 					<div class="divider-header"></div>
+					</div>
 					</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 		<div class="text-center">
@@ -585,6 +586,12 @@
     <script src="js/jquery.min.js"></script>	 
 	<script src="js/bootstrap.min.js"></script>
 	
+	<script type="text/javascript">
+		if((/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent))){
+			document.write('<script src="js/my.js"><\/script>');
+		}
+	</script>
+
 	<script src="js/jquery.sticky.js"></script>
     <script src="js/jquery.easing.min.js"></script>	
 	<script src="js/jquery.scrollTo.js"></script>

@@ -1,13 +1,6 @@
 /*global jQuery:false */
 (function ($) {
 
-
-	$(window).load(function(){
-      $("#navigation").sticky({ topSpacing: 0 });
-    });
-	
-
-
 	$('ul.nav li.dropdown').hover(function() {
 	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
 	}, function() {
@@ -59,7 +52,7 @@
 		afterHideLightbox: function(){},            // Callback after the lightbox is hidden
 		onPrev: function(element){},                // Callback when the lightbox gallery goes to previous item
 		onNext: function(element){},                // Callback when the lightbox gallery goes to next item
-		errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
+		errorMessage: 'Nie udało się załadowa zdjęcia. Spróbuj później.' // Error message when content can't be loaded
 	});
 
 	jQuery('.appear').appear();
