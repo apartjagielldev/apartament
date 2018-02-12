@@ -27,5 +27,7 @@ $(document).ready(function(){
     RemoveHeader('gallery');
     RemoveHeader('contact');
     RemoveHeader('prices');
+
+    $('ul.nav >li > a').css('color','black');
     
 });
