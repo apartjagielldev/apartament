@@ -588,6 +588,9 @@
 	
 	<script type="text/javascript">
 		if((/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent))){
+			document.write('<script src="js/my-mobile.js"><\/script>');
+		}
+		else{
 			document.write('<script src="js/my.js"><\/script>');
 		}
 	</script>

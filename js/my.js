@@ -1,39 +1,17 @@
 $(document).ready(function(){
-    
-    function RemoveClassInSection(sectionName, selector, className)
-    {
-        $('#' + sectionName).find(selector + '.' + className).each(function(index,value){        
-            $(value).removeClass(className);
-        });
-    };
-
-    function RemoveHeader(sectionName)
-    {
-        RemoveClassInSection(sectionName, 'h2', 'animated');
-        RemoveClassInSection(sectionName, 'h2', 'bounceInDown');
-    }
-
-    RemoveClassInSection('gallery', 'div', 'animated');
-    RemoveClassInSection('gallery', 'div', 'fadeInUp');
-    
-    RemoveClassInSection('atractions', 'div', 'animated');
-    RemoveClassInSection('atractions', 'div', 'rotateInDownLeft');
-    RemoveClassInSection('atractions', 'div', 'slow');
-
-    RemoveClassInSection('description', 'div', 'animated');
-    RemoveClassInSection('description', 'div', 'bounceInDown');
-
-    RemoveClassInSection('intro', 'h1', 'fadeInDown');
-    RemoveClassInSection('intro', 'h1', 'animated');
-
-    RemoveClassInSection('intro', 'p', 'fadeInUp');
-    RemoveClassInSection('intro', 'p', 'animated');
-    
-    RemoveHeader('atractions');
-    RemoveHeader('gallery');
-    RemoveHeader('contact');
-    RemoveHeader('prices');
-
-    $('ul.nav >li > a').css('color','black');
-    
+    //nivo lightbox
+	$('.gallery-item a').nivoLightbox({
+		effect: 'fadeScale',                             // The effect to use when showing the lightbox
+		theme: 'default',                           // The lightbox theme to use
+		keyboardNav: true,                          // Enable/Disable keyboard navigation (left/right/escape)
+		clickOverlayToClose: true,                  // If false clicking the "close" button will be the only way to close the lightbox
+		onInit: function(){},                       // Callback when lightbox has loaded
+		beforeShowLightbox: function(){},           // Callback before the lightbox is shown
+		afterShowLightbox: function(lightbox){},    // Callback after the lightbox is shown
+		beforeHideLightbox: function(){},           // Callback before the lightbox is hidden
+		afterHideLightbox: function(){},            // Callback after the lightbox is hidden
+		onPrev: function(element){},                // Callback when the lightbox gallery goes to previous item
+		onNext: function(element){},                // Callback when the lightbox gallery goes to next item
+		errorMessage: 'Nie udało się załadować zdjęcia. Spróbuj później.' // Error message when content can't be loaded
+	});
 });
